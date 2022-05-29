@@ -1,0 +1,16 @@
+nome=str(input("Digite o nome do Aluno: "))
+pt=float(input("Digite a Nota em Português: "))
+mt=float(input("Digite a Nota em Matemática: "))
+cg=float(input("Digite a Nota em Conhecimentos Gerais: "))
+
+notas=pt+mt+cg
+media=notas/3
+
+if(pt<=4) or (mt<=4) or (cg<=4):
+    print("\n{} está reprovado.\n".format(nome))
+    print("Nota em português: {}\nNota em Matemática: {}.".format(pt,mt))
+    print("Nota em Conhecimentos Gerais: {}\nMédia de {} pontos.".format(cg,media))
+elif(media>=5):
+    print("\n{} está aprovado.\n".format(nome))
+    print("Nota em português: {}\nNota em Matemática: {}.".format(pt, mt))
+    print("Nota em Conhecimentos Gerais: {}\nMédia de {} pontos.".format(cg, media))
