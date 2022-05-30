@@ -1,0 +1,6 @@
+a=int(input("Digite o valor do primeiro número: "))
+b=int(input("Digite o valor do segundo número: "))
+if (a%b==0) or (b%a==0):
+    print("{} e {}, são múltiplos".format(a,b))
+else:
+    print("{} e {}, não são múltiplos".format(a,b))
