@@ -1,0 +1,15 @@
+saldo=float(input("Quantos reais você possui? R$"))
+operacao=str
+print("Seu saldo é de : R${}\n".format(saldo))
+while (saldo>=0):
+    operacao=str(input("Digite saldo, para ver o saldo.\nDigite saque, para sacar.\nDigite deposito, para depositar.\n"))
+    if (operacao == "saldo"):
+        print("\nSeu saldo é de: R${}\n".format(saldo))
+    if (operacao == "saque"):
+        saque=(float(input("Digite o Valor do Saque:\nR$")))
+        saldo=saldo-saque
+        print("Seu saldo é de : R${}\n".format(saldo))
+    if (operacao == "deposito"):
+        deposito=(float(input("Digite o valor do Depósito:\nR$")))
+        saldo=saldo+deposito
+        print("Seu saldo é de : R${}\n".format(saldo))
