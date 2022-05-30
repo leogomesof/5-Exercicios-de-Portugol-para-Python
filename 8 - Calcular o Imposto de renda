@@ -1,0 +1,11 @@
+q=0
+while (q==0):
+    r=int(input("Digite sua renda anual:\nR$"))
+    if (r==10000):
+        print("\nVocê está isento do imposto de renda\n")
+    if (r>10000) and (r<=25000):
+        a=r*0.10
+        print("\nDedução de R${}\n".format(a))
+    if (r>25000):
+        a=r*0.25
+        print("\nDedução de R${}\n".format(a))
